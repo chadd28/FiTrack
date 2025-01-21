@@ -1,0 +1,130 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  border-radius: 4px;
+  padding: 0px 15px;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+}
+header a:hover {
+  background-color: #444;  
+  color: #f1f1f1;  
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;      /* 2 columns with 3.5:1 ratio */
+  gap: 100px;
+}
+.workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.removing {
+  opacity: 0;
+  transform: translateY(-20px); /* Move up slightly as it fades out */
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2 em;
+  color: var(--primary); 
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  padding-bottom: 1px; /* Reduced bottom padding to center trash can icon*/
+  border-radius: 20%;
+  color: #333;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.workout-details span:hover {
+  background: rgb(255, 188, 188);
+  transform: scale(1.1);
+}
+
+/* New Workout Form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input.error{
+  border: 1px solid var(--error)    /* Adds red border around input fields when blank */
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+form button:hover {
+  transform: scale(1.05);
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
