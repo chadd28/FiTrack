@@ -12,10 +12,4 @@
 - **Frontend**: React
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/chadd28/FiTrack.git
+- **Authentication**: JWT (coming soon!)
